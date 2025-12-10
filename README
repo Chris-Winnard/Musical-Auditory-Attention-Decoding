@@ -1,0 +1,1 @@
+Preprocessing is handled automatically within each of the four AAD analysis files: single-stream_subjDep.py; single-stream_subjInd.py; multi-stream_subjDep.py; and multi-stream_subjInd.py. Simply set the preprocessing parameters, directories etc. as desired in the "para" class for the file, and run.
