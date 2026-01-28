@@ -103,7 +103,8 @@ print("Processed stimuli for all sets.")
 
 
 # ===============================================================================================================
-# STEP 2: Helper functions for cross-subject data aggregation & leave-one-trial-out
+# STEP 2: Helper functions for excluding data (necessary for leave-one-person-and-movie-out cross-val), leave-one
+# -trial-out ridge parameter duning, training/averaging models, and plotting stimulus feature predictions
 # ===============================================================================================================
 
 def exclude_LOPMO(data_list, stim_list, meta_list, test_meta):

@@ -104,7 +104,8 @@ print("Processed stimuli for all sets.")
 
 
 # ===============================================================================================================
-# STEP 2: Helper functions for cross-subj data aggregation & leave-one-trial-out
+# STEP 2: Helper functions for leave-one-trial-out ridge parameter duning, training/averaging models, and 
+# plotting stimulus feature predictions
 # ===============================================================================================================
 
 def find_best_lambda(EEG, Stim, para):

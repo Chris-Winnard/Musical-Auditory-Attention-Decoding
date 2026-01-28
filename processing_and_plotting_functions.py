@@ -119,7 +119,7 @@ def preprocessAndEpoch(subject, para):   #Trim start and end
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)
@@ -266,7 +266,7 @@ def preprocessAndEpoch_MSfirst30s(subject, para):   #Trim start and end
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)
@@ -413,7 +413,7 @@ def preprocessAndEpoch_singleStream(subject, para):
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)
@@ -577,7 +577,7 @@ def preprocessAndEpoch_emoDec(subject, para):
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)
@@ -752,7 +752,7 @@ def preprocessAndEpoch_ceegrid(subject, para):   #Trim start and end
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)
@@ -906,7 +906,7 @@ def preprocessAndEpoch_ceegrid_MSfirst30s(subject, para):   #Trim start and end
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)
@@ -1060,7 +1060,7 @@ def preprocessAndEpoch_singleStream_ceegrid(subject, para):
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)
@@ -1231,7 +1231,7 @@ def preprocessAndEpoch_emoDec_ceegrid(subject, para):
             
             #Iterate through each prediction and label
                 for i, (label, proba) in enumerate(zip(ic_labels['labels'], ic_labels['y_pred_proba'])):
-                    #Check if label is not 'brain' or 'other' and probability is over threshold
+                    #Check if label is 'eye blink'
                     if label in ['eye blink']:
                         #Mark component for exclusion
                         exclusion_indices.append(i)

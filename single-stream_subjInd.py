@@ -97,7 +97,8 @@ for set_id, proc in processed_stim_all.items():
 
 
 # ===============================================================================================================
-# STEP 2: Helper functions for cross-subj data aggregation & leave-one-trial-out
+# STEP 2: Helper functions for leave-one-trial-out ridge parameter duning, training/averaging models, and 
+# plotting stimulus feature predictions
 # ===============================================================================================================
 
 def find_best_lambda(eeg, stim, para):
